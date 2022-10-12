@@ -1,0 +1,12 @@
+public class CalculadorDeImposto {
+    private double TotaldeImposto;
+
+    public void registra(Tributavel t) {
+        double valor = t.getValorImposto();
+        this.TotaldeImposto += valor;
+    }
+
+    public double getTotaldeImposto() {
+        return TotaldeImposto;
+    }
+}
